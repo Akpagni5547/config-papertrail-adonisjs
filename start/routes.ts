@@ -37,5 +37,8 @@ Route.get('/', async ({logger}) => {
   logger.info('hello papertrail');
   logger.warn('An warn message')
   logger.error('An error message')
+  logger.error('An error message 2')
+  logger.error('An error message3')
+  logger.error('An error message4')
   return { hello: 'world' }
 })
