@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "node ace serve --watch",
     "build": "node ace build --production",
+    "prestart": "cd build && npm ci --production" ,
     "start": "node server.js | ./node_modules/.bin/pino-papertrail --host logs4.papertrailapp.com --port 18518 --appname helios"
   },
   "devDependencies": {
