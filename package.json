@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "node ace serve --watch",
-    "build": "npm run build --production",
+    "prebuild": "npm run build --production",
+    "build": "node ace build --production",
     "start": "node server.js | ./node_modules/.bin/pino-papertrail --host logs4.papertrailapp.com --port 18518 --appname helios"
   },
   "devDependencies": {
