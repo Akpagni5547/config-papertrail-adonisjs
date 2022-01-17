@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "node ace serve --watch",
-    "build": "node ace build --production",
+    "prebuild": "node ace build --production",
+    "build": "ls -a",
     "prestart": "ls -a",
-    "start": "node ./build/server.js | ./node_modules/.bin/pino-papertrail --host logs4.papertrailapp.com --port 18518 --appname helios"
+    "start": "node server.js | ./node_modules/.bin/pino-papertrail --host logs4.papertrailapp.com --port 18518 --appname helios"
   },
   "devDependencies": {
     "@adonisjs/assembler": "^5.3.0",
