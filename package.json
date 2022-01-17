@@ -2,6 +2,10 @@
   "name": "test-logger",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "npm": ">=6.0.0",
+    "node": ">=14.0.0"
+  },
   "scripts": {
     "dev": "node ace serve --watch",
     "postuild": "ls -a",
